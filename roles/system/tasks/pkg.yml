@@ -1,0 +1,10 @@
+---
+- name: Update system
+  apt:
+    name: "*"
+    state: latest
+
+- name: Install extra_packages
+  apt:
+    name: "{{ extra_packages }}"
+    state: latest

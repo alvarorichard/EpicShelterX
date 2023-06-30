@@ -1,0 +1,28 @@
+username: utorrent
+rustup_user: "{{ username }}"
+shell: /bin/zsh
+oh_my_zsh_theme: bira
+
+oh_my_zsh_plugins:
+  - git
+  - zsh-syntax-highlighting
+  - fzf
+  - zsh-autosuggestions
+  - k
+  - sudo
+
+rustup_cargo_crates: []
+extra_packages:
+  - htop
+  - neofetch
+  - net-tools
+  - unzip
+  - wget
+  - curl
+  - git
+  - zsh
+  - sudo
+  - p7zip
+  - bpytop
+  - ffmpeg
+  - openjdk-17-jdk

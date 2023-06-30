@@ -1,0 +1,60 @@
+---
+- name: Create user
+  ansible.builtin.user:
+    name: "{{ username }}"
+    state: present
+    shell: "{{ shell }}"
+
+- name: Ensure user home exists
+  ansible.builtin.file:
+    path: "/home/{{ username }}"
+    state: directory
+    owner: "{{ username }}"
+    group: "{{ username }}"
+    mode: "0755"
+
+# - name: Add user to wheel group
+#   ansible.builtin.user:
+#     name: "{{ username }}"
+#     groups: wheel
+#     append: true
+
+- name: Add wheel group to sudoers file
+  ansible.builtin.lineinfile:
+    path: /etc/sudoers
+    line: "{{ username }} ALL=(ALL) NOPASSWD: ALL"
+    validate: /usr/sbin/visudo -cf %s
+    state: present
+    insertafter: "^# root"
+
+- name: Get output of sudo whoami
+  ansible.builtin.command: sudo whoami
+  become_user: "{{ username }}"
+  register: sudo_whoami_output
+  changed_when: false
+
+- name: Verify that user is root
+  ansible.builtin.fail:
+    msg: User can't run sudo
+  when: sudo_whoami_output.stdout != "root"
+
+- name: Install zsh-syntax-highlighting
+  git:
+    repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: "/home/{{ username }}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
+
+- name: Install fzf
+  git:
+    repo: https://github.com/junegunn/fzf.git
+    dest: "/home/{{ username }}/.fzf"
+    depth: 1
+
+- name: Install zsh-autosuggestions
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: "/home/{{ username }}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+
+- name: Install k
+  git:
+    repo: https://github.com/supercrabtree/k
+    dest: "/home/{{ username }}/.oh-my-zsh/custom/plugins/k"

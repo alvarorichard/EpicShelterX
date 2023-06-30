@@ -1,0 +1,22 @@
+---
+
+- hosts: servidor
+  become: true
+  roles:
+    - role: system
+      tags:
+        - system
+    - role: geerlingguy.pip
+      tags:
+        - pip
+        - system
+    - role: geerlingguy.docker
+      tags:
+        - system
+        - docker
+    - role: hurricanehrndz.rustup
+      tags:
+        - rust
+    - role: gantsign.oh-my-zsh
+      users:
+        - username: "{{ username }}"
