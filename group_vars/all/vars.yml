@@ -12,6 +12,8 @@ oh_my_zsh_plugins:
   - sudo
 
 rustup_cargo_crates: []
+shadowsocks_port: 4242
+container_path: "/home/{{ username }}/container"
 extra_packages:
   - htop
   - neofetch

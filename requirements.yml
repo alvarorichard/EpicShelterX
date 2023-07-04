@@ -3,4 +3,4 @@ roles:
   - name: geerlingguy.docker
   - name: geerlingguy.pip
   - name: hurricanehrndz.rustup
-  - name: gantsign.oh-my-zsh
+  # - name: gantsign.oh-my-zsh

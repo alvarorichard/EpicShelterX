@@ -17,6 +17,8 @@
     - role: hurricanehrndz.rustup
       tags:
         - rust
-    - role: gantsign.oh-my-zsh
-      users:
-        - username: "{{ username }}"
+    - role: docker
+      tags: containers
+    # - role: gantsign.oh-my-zsh
+    #   users:
+    #     - username: "{{ username }}"
