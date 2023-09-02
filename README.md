@@ -2,7 +2,7 @@
 
 This Ansible playbook automates a comprehensive user environment setup on a target Ubuntu machine. It handles system updates, utility package installations, user management, sudo privileges, Zsh shell plugins, and ShadowSocks server configuration.
 
-## Features
+## Features:
 
 ## System Setup
 
