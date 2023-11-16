@@ -1,12 +1,12 @@
 {
     "_ansible_facts_gathered": true,
     "ansible_all_ipv4_addresses": [
-        "172.17.0.1",
-        "192.168.0.200"
+        "",
+        ""
     ],
     "ansible_all_ipv6_addresses": [
-        "2804:14c:101:b95f:6202:92ff:fe18:bab4",
-        "fe80::6202:92ff:fe18:bab4"
+        "",
+        ""
     ],
     "ansible_apparmor": {
         "status": "enabled"
