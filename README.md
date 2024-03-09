@@ -1,10 +1,10 @@
-<br>
-<br>
 
-![Screenshot_319](https://github.com/alvarorichard/EpicShelterX/assets/102667323/99a2e3b4-96ce-46aa-ab64-611ac06aa6fb)
 
-<br>
-<br>
+<p align="center">
+  <img src="https://github.com/alvarorichard/EpicShelterX/assets/88117897/71419e0c-c229-4db8-b4c9-1b6e4406134c" alt="Imagem logo" />
+</p>
+
+
 
 ## EpicShelterX
 
