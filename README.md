@@ -1,9 +1,8 @@
 
 
 <p align="center">
-  <img src="https://github.com/alvarorichard/EpicShelterX/assets/88117897/ced94af7-e1a3-46a0-bb75-4360c5530937" alt="Imagem logo" />
+  <img src="https://github.com/alvarorichard/EpicShelterX/assets/88117897/ced94af7-e1a3-46a0-bb75-4360c5530937" alt="Imagem logo" style="width: 400px; height: auto;" />
 </p>
-
 
 
 
