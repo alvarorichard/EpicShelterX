@@ -1,4 +1,10 @@
+<br>
+<br>
+
 ![Screenshot_319](https://github.com/alvarorichard/EpicShelterX/assets/102667323/99a2e3b4-96ce-46aa-ab64-611ac06aa6fb)
+
+<br>
+<br>
 
 ## EpicShelterX
 
