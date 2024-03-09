@@ -1,3 +1,5 @@
+![Screenshot_319](https://github.com/alvarorichard/EpicShelterX/assets/102667323/99a2e3b4-96ce-46aa-ab64-611ac06aa6fb)
+
 ## EpicShelterX
 
 This Ansible playbook automates a comprehensive user environment setup on a target Ubuntu machine. It handles system updates, utility package installations, user management, sudo privileges, Zsh shell plugins, and ShadowSocks server configuration.
